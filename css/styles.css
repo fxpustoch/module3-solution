@@ -5,10 +5,8 @@
     font-family:'Comic Sans MS', cursive, sans-serif;
     border-radius: 0;
     border: 3px solid black;
-    height:70px;
     color:black;
 }
-
 
 .navbar-brand h1 {
     color:black;
@@ -19,12 +17,26 @@
     margin-left:0;
 }
 
-#menus{
-    background-color:white;
+#nav-list span{
+    font-size : 1.5em;
+    background-color: white;
 }
 
-#menu-description{   
-    background-color: grey;
+li {
+    background-color:white;
+    border:1px solid black;
+    padding-top:5px;
+    border-bottom:5px;
+    text-align: center;
+}
+
+.row {
+    margin:25px 10px 25px 10px;
+    overflow: hidden;
+}
+
+.navbar-brand a:hover, navbar-brand a:focus {
+    text-decoration:none;
 }
 
 h1 {
@@ -49,45 +61,14 @@ h2 {
 
 p {   
     font-family:'Comic Sans MS', Comic Sans, cursive;
-}
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-    #main-content{
-        margin-right:auto;
-        margin-left:auto;
-        width:100%;   
-    }
-
+    background-color: grey;;
 }
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 1199px) {
-    #main-content{
+@media (min-width: 500px)  {
+    .container {
         margin-right:auto;
         margin-left:auto;
-        width:100%;   
+        width:98%
     }
-}
-
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-    #main-content {
-        margin-right:20px;
-        margin-left:20px;
-        padding-left:20px;
-        padding-right:60px;
-        width:100%;   
-    }
-   
-    #collapsable-nav {
-        text-align: center;
-        font-weight:bold;
-        margin-top:0;
-    }
-
-    
-
-
-   
 }
